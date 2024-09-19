@@ -2,12 +2,17 @@ import Link from 'next/link';
 
 export default function PostList({ posts }) {
   return (
-    <div>
+    <div className="space-y-6">
       {posts.map((post) => (
-        <div key={post.id}>
-          <h3>{post.content}</h3>
-          <p>Likes: {post.likes} | Comments: {post.comments}</p>
-          <Link href={`/posts/${post.id}`}>View Details</Link>
+        <div key={post.id} className="bg-white shadow-md rounded-lg p-6">
+          <h3 className="text-xl font-semibold mb-2">{post.content}</h3>
+          <div className="flex justify-between text-gray-500 mb-4">
+            <p>Likes: {post.likes}</p>
+            <p>Comments: {post.comments}</p>
+          </div>
+          <Link href={`/posts/${post.id}`} className="text-primary hover:underline">
+            View Details
+          </Link>
         </div>
       ))}
     </div>

@@ -1,6 +1,8 @@
-import { NextResponse } from "next/server";
-const {currentUser} = require("../../../lib/mockData.js");
+import { NextResponse } from 'next/server';
+import { currentUser } from '../../../lib/mockData';
 
-export async function GET(){
-    return NextResponse.json(currentUser);
+export async function GET() {
+  console.log('API route hit: /api/user');
+  console.log('Current user:', currentUser);
+  return NextResponse.json(currentUser);
 }
