@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Couch Surfing Social App
 
-## Getting Started
+## Coding Challenge Completion
 
-First, run the development server:
+This project was completed by Noel Serrato as part of a coding challenge. The challenge requirements were to create a simple web app with basic social capabilities, including:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* A user-centric view where users can see their profile
+* A screen for listing mock posts from friends and a detail view of the posts
+* Placeholders for good data structures for users, posts, and friends
+* Mock API calls and data as needed
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Overview
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The Couch Surfing Social App is a Next.js application that simulates a basic social network for couch surfers. It includes features such as user profiles, friend lists, and a post feed with detailed post views.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Development Experience
 
-## Learn More
+As a developer, I faced several challenges and learning opportunities while working on this project:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Learning Next.js**: Before starting this project, I had limited experience with Next.js. I spent several hours going through online tutorials and a Next.js 101 guide to familiarize myself with the framework's concepts and best practices.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Data Mapping Issues**: One of the main struggles I encountered was mapping through the friends data. Initially, I had issues with the `friends.map is not a function` error, which required me to refactor my data handling approach.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. **Error Boundaries**: Implementing error boundaries was another challenge. I had to learn how to properly catch and display errors to enhance the user experience and make the app more robust.
 
-## Deploy on Vercel
+4. **Best Practices**: Throughout the development process, I attempted to incorporate best practices where I saw fit, based on my research and understanding of Next.js and React development.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. **Navigation Enhancement**: To improve user navigation, I added a breadcrumb component, allowing users to easily understand their location within the app and navigate back to previous pages.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Future Features
+
+If given more time, some potential features to enhance the app could include:
+
+1. Adding a comment section to the post detail page
+2. Implementing user authentication and login functionality
+3. Developing a more robust backend with a real database
+4. Enhancing the user interface with more interactive elements
+5. Implementing real-time updates for posts and comments
+
+## Conclusion
+
+This project was a valuable learning experience in working with Next.js and developing a social media-style application. Despite the challenges, I hopefully was able to meet the core requirements of the coding challenge, while gaining insights into the Next.js framework.
